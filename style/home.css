@@ -1,5 +1,5 @@
 :root {
-  --main-purple-dark-color: #8c50ff;
+  --main-purple-dark-color: #8543ff;
   --main-purple-light-color: #c216db;
   --header-text-color: #232323;
   --paragraph-color: #868686;
@@ -14,6 +14,11 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+}
+
+body {
+  line-height: 1.5;
+  letter-spacing: 1px;
 }
 
 ul {
@@ -101,6 +106,81 @@ a {
   -webkit-transition: all 0.3s ease-in-out;
   background-color: var(--main-purple-dark-color);
 }
+
+/* ---------------------------
+------ HERO - SHOWCASE -------
+------------------------------ */
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 95vh;
+}
+.hero__text {
+  width: 500px;
+  margin: auto;
+}
+
+.hero__text h3 {
+  font-weight: 400;
+  color: var(--header-text-color);
+  font-size: calc(20 / 16 * 1rem);
+}
+
+.hero__text h1 {
+  font-weight: 600;
+  font-size: calc(40 / 16 * 1rem);
+  padding-bottom: 25px;
+}
+
+.thin {
+  font-weight: 400;
+}
+
+.hero__text p {
+  font-size: 1rem;
+  color: var(--paragraph-color);
+  padding-bottom: 30px;
+}
+
+.hero__text button {
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  transition: all 0.3s ease;
+  background: var(--main-purple-dark-color);
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.18);
+}
+
+.hero__text button:hover {
+  transform: translatey(-4px);
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.05);
+}
+
+.hero__text button:active,
+.hero__text button:focus {
+  transform: translatey(3px);
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.28);
+}
+
+.hero__text button a {
+  font-weight: 500;
+  font-size: 1rem;
+  color: var(--white-color);
+}
+
+.hero__img {
+  width: 400px;
+  margin: auto;
+  
+}
+
+
+/* --------------------
+------ ANIMATION-------
+----------------------- */
+
 
 /* --------------------------
 ------ MEDIA QUERY -------
