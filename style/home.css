@@ -1,0 +1,120 @@
+:root {
+  --main-purple-dark-color: #8c50ff;
+  --main-purple-light-color: #c216db;
+  --header-text-color: #232323;
+  --paragraph-color: #868686;
+  --section-color: #eff2f7;
+  --white-color: #fff;
+}
+
+/* General Styling */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* -------------------------
+------ NAVIGATIONBAR -------
+---------------------------- */
+
+.header {
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.nav {
+  z-index: 1000;
+  display: flex;
+  padding: 30px;
+  position: fixed;
+  align-items: center;
+  justify-content: space-evenly;
+  background: var(--white-color);
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.05);
+}
+
+.nav__logo {
+  font-weight: 500;
+  font-weight: 600;
+  margin: 0 20px;
+  font-size: calc(30 / 16 * 1rem);
+  color: var(--main-purple-dark-color);
+}
+
+.nav__list {
+  display: flex;
+  align-items: center;
+}
+
+.nav__item {
+  margin: 0 20px;
+}
+
+.nav__link {
+  font-weight: 400;
+  transition: all 0.3s ease;
+  font-size: calc(18 / 16 * 1rem);
+  color: var(--header-text-color);
+}
+
+.nav__link:hover {
+  color: var(--main-purple-light-color);
+}
+
+.contact__link {
+  border-radius: 5px;
+  padding: 8px 10px;
+  transition: all 0.3s ease;
+  color: var(--white-color);
+  background: var(--main-purple-dark-color);
+}
+
+.contact__link:hover {
+  color: var(--white-color);
+  background: var(--main-purple-light-color);
+}
+
+/* --------------------------
+------ HAMBURGER MENU -------
+----------------------------- */
+
+.hamburger {
+  display: none;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  display: block;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  background-color: var(--main-purple-dark-color);
+}
+
+/* --------------------------
+------ MEDIA QUERY -------
+----------------------------- */
+
+@media (max-width: 1500px) {
+  .nav {
+    width: 100%;
+    display: flex;
+    padding: 20px;
+    z-index: 1000;
+    position: fixed;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--white-color);
+  }
+}
