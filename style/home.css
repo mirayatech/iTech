@@ -171,16 +171,26 @@ a {
 }
 
 .hero__img {
-  width: 400px;
+  width: 350px;
   margin: auto;
-  
+  animation: glide 2s ease-in-out infinite alternate;
+  animation-timing-function: linear;
+  transform-origin: bottom;
 }
-
 
 /* --------------------
 ------ ANIMATION-------
 ----------------------- */
 
+@keyframes glide {
+  from {
+    transform: translateY(1.5);
+  }
+
+  to {
+    transform: translateY(-15px);
+  }
+}
 
 /* --------------------------
 ------ MEDIA QUERY -------
