@@ -115,7 +115,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 95vh;
+  height: 100vh;
 }
 .hero__text {
   width: 500px;
@@ -176,6 +176,65 @@ a {
   animation: glide 2s ease-in-out infinite alternate;
   animation-timing-function: linear;
   transform-origin: bottom;
+}
+
+/* -------------------
+------ SERVICE -------
+---------------------- */
+
+.service {
+  padding: 30px;
+  display: grid;
+  justify-content: center;
+  background: var(--section-color);
+  grid-template-columns: repeat(4, auto);
+  text-align: center;
+}
+
+.service__card {
+  padding: 30px;
+  margin: -70px 20px 0 20px;
+  max-width: 280px;
+  border-radius: 35px 0 35px 35px;
+  background: var(--white-color);
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.05);
+}
+
+.service__card h3 {
+  color: var(--header-text-color);
+  margin-bottom: 10px;
+  font-size: calc(18 / 16 * 1rem);
+}
+
+.service__card p {
+  color: var(--paragraph-color);
+  font-size: 1rem;
+}
+
+.service__card i {
+  padding: 15px;
+  margin-bottom: 20px;
+  color: var(--white-color);
+  font-size: calc(20 / 16 * 1rem);
+  border-radius: 15px 0 15px 15px;
+}
+
+.service__card .fa-code-branch {
+  padding: 15px 18px;
+
+  background: var(--main-purple-dark-color);
+}
+
+.service__card .fa-people-group {
+  background: #e26161;
+}
+
+.service__card .fa-code {
+  background: var(--main-purple-light-color);
+}
+
+.service__card .fa-list-ul {
+  background: #eb8220;
 }
 
 /* --------------------
