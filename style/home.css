@@ -201,14 +201,16 @@ a {
 }
 
 .service__card h3 {
-  color: var(--header-text-color);
+  font-weight: 600;
   margin-bottom: 10px;
+  color: var(--header-text-color);
+
   font-size: calc(18 / 16 * 1rem);
 }
 
 .service__card p {
-  color: var(--paragraph-color);
   font-size: 1rem;
+  color: var(--paragraph-color);
 }
 
 .service__card i {
