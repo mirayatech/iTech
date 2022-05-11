@@ -322,7 +322,8 @@ a {
 }
 
 .web__service img {
-  width: 700px;
+  width: 600px;
+  margin-right: 10px;
 }
 
 .web h3 {
